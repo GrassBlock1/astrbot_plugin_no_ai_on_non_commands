@@ -1,11 +1,8 @@
-# astrbot-plugin-helloworld
+# 你不许调用 AI
 
-AstrBot 插件模板 / A template plugin for AstrBot plugin feature
+在没有对应命令的情况下，阻止检测到 / 开头的消息时调用 AI
 
-> [!NOTE]
-> This repo is just a template of [AstrBot](https://github.com/AstrBotDevs/AstrBot) Plugin.
-> 
-> [AstrBot](https://github.com/AstrBotDevs/AstrBot) is an agentic assistant for both personal and group conversations. It can be deployed across dozens of mainstream instant messaging platforms, including QQ, Telegram, Feishu, DingTalk, Slack, LINE, Discord, Matrix, etc. In addition, it provides a reliable and extensible conversational AI infrastructure for individuals, developers, and teams. Whether you need a personal AI companion, an intelligent customer support agent, an automation assistant, or an enterprise knowledge base, AstrBot enables you to quickly build AI applications directly within your existing messaging workflows.
+众所周知，“/”是 Astrbot 默认的唤醒词，如果你只是希望它检测命令，而不是调用 AI 时，你可能需要这个插件
 
 # Supports
 
