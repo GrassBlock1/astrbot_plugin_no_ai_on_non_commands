@@ -4,7 +4,7 @@ from astrbot.core.star.filter.command import CommandFilter
 from astrbot.core.star.filter.command_group import CommandGroupFilter
 
 
-@register("helloworld", "YourName", "一个简单的 Hello World 插件", "1.0.0")
+@register("astrbot_plugin_no_ai_on_non_commands", "grassblock", "在没有对应命令的情况下，阻止检测到 / 开头的消息时调用 AI", "1.0.1")
 class MyPlugin(Star):
     def __init__(self, context: Context):
         super().__init__(context)
