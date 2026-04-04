@@ -31,6 +31,7 @@ class MyPlugin(Star):
 
         if not has_real_command:
             event.stop_event()
+            print("这大概不是一个命令，跳过处理")
             return
 
     async def terminate(self):
