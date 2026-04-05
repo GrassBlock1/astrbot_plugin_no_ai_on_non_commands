@@ -1,6 +1,6 @@
 [project]
 name = "astrbot-plugin-no-ai-on-non-commands"
-version = "v1.0.0"
+version = "v1.0.1"
 description = "在没有对应命令的情况下，阻止检测到 / 开头的消息时调用 AI"
 readme = "README.md"
 requires-python = ">=3.13"
