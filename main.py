@@ -10,7 +10,7 @@ class OriginalSlashPrefixFilter(CustomFilter):
         original_message = getattr(event.message_obj, "message_str", "")
         return isinstance(
             original_message, str
-        ) and original_message.strip().startswith("/")
+        ) and original_message.strip().replace("/ ","",1).startswith("/") # 去除可能的回复消息
 
 
 @register(
@@ -44,6 +44,7 @@ class MyPlugin(Star):
                 break
 
         if not has_real_command:
+            print(f"这个消息 {event.message_obj} 似乎并不指向一个真正的命令，尝试阻止消息传播")
             event.stop_event()
             return
 
